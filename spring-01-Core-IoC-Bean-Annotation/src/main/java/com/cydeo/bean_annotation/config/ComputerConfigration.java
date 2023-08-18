@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class ComputerConfigration {
-    @Bean(name = "sony")
+    @Bean(name = "sony")// you can give special name or use method name
 public Monitor SonyMonitor(){
     return new SonyMonitor("12x3","213ed",23);
 
