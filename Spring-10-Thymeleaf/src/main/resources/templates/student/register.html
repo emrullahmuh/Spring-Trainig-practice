@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>cydeo</title>
+</head>
+<body style="background-color: aqua">
+<!--display Valu of model-->
+<h2 th:text="${students.get(0).getFirstname()}"></h2>
+<h2 th:text="${students.get(0).getLastname()}"></h2>
+<!--Concatenation-->
+<h2 th:text="${'hello '+students.get(1).getFirstname()}"></h2>
+<h2 th:text="${students.get(0).getFirstname()+' '+students.get(0).getLastname()}"></h2>
+<!--Link-->
+<a th:href="@{https://www.youtube.com}">youtube</a>
+<a th:href="@{/student/drop}">malcolm</a>
+
+<!--Adding Parameters in link-->
+<a th:href="@{/student/drop(id=4)}">Link</a>
+
+</body>
+
+</html>
