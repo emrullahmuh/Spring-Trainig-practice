@@ -21,8 +21,8 @@ model.addAttribute("students", DataGenerator.createStudent());
     }
 
     @RequestMapping("/drop")
-    public String drop(@RequestParam int id){
-        System.out.println(id);
+    public String drop(@RequestParam String name){
+        System.out.println(name);
         return "student/drop";
     }
 
