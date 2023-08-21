@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>admin login</h2>
+<!--Display all admins name-->
+<tr th:each="name:${admin}">
+    <td th:text="${name.getFirstname()+' '+name.getLastname()}"></td>
+</tr>
+<a th:href="@{/visitor/login}">visitor</a>
+</body>
+</html>
