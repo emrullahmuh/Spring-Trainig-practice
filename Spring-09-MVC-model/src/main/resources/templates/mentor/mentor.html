@@ -5,6 +5,7 @@
     <title>Title</title>
 </head>
 <body>
+<table>
 <thead>
 <tr>
     <td>First name</td>
@@ -14,24 +15,24 @@
 </tr></thead>
 <tbody>
 <tr>
-    <td th:text="${menlist.}"></td>
-    <td>Last name</td>
-    <td>Age</td>
-    <td>Gender</td>
+    <td th:text="${menlist.get(0).getFirstneme()}"></td>
+    <td th:text="${menlist.get(0).getLastname()}"></td>
+    <td th:text="${menlist.get(0).getAge()}"></td>
+    <td th:text="${menlist.get(0).getGender()}"></td>
 </tr><tr>
-    <td>First name</td>
-    <td>Last name</td>
-    <td>Age</td>
-    <td>Gender</td>
+    <td th:text="${menlist.get(1).getFirstneme()}"></td>
+    <td th:text="${menlist.get(1).getLastname()}"></td>
+    <td th:text="${menlist.get(1).getAge()}"></td>
+    <td th:text="${menlist.get(1).getGender()}"></td>
 </tr><tr>
-    <td>First name</td>
-    <td>Last name</td>
-    <td>Age</td>
-    <td>Gender</td>
+    <td th:text="${menlist.get(2).getFirstneme()}"></td>
+    <td th:text="${menlist.get(2).getLastname()}"></td>
+    <td th:text="${menlist.get(2).getAge()}"></td>
+    <td th:text="${menlist.get(2).getGender()}"></td>
 </tr>
 
 
 
-</tbody>
-</body>
+</tbody></table>
+ </body>
 </html>
